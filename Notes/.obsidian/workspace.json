@@ -11,10 +11,14 @@
             "id": "d63a752eb3d5afc5",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Session 1/Session 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Session 1"
             }
           }
         ]
@@ -179,14 +183,16 @@
   "active": "d63a752eb3d5afc5",
   "lastOpenFiles": [
     "Wolrd Building/Allgenines/Literatur/Dissertation Erweiterte Konzepte der arkanen Runentheorie.md",
+    "Wolrd Building/Kontinen Anuasrta/Königreich der Vereinten Menschlichen Regionen/Königreich der Vereinten Menschlichen Regionen.md",
+    "Wolrd Building/Kontinen Anuasrta/Königreich der Vereinten Menschlichen Regionen/Stahlfort.md",
+    "Wolrd Building/Allgenines/Vlad Dracul Țepeș.md",
+    "Wolrd Building/Allgenines/Drachen der Verwüstung.md",
     "Wolrd Building/Allgenines/Aufbau des Adels/Ritter.md",
     "Wolrd Building/Allgenines/Aufbau des Adels/Markgraf.md",
     "Wolrd Building/Allgenines/Aufbau des Adels/König.md",
     "Wolrd Building/Allgenines/Aufbau des Adels/Count.md",
     "Wolrd Building/Allgenines/Aufbau des Adels/Baron.md",
     "Session 4/Session 4.md",
-    "Wolrd Building/Kontinen Anuasrta/Königreich der Vereinten Menschlichen Regionen/Königreich der Vereinten Menschlichen Regionen.md",
-    "Wolrd Building/Kontinen Anuasrta/Königreich der Vereinten Menschlichen Regionen/Stahlfort.md",
     "Wolrd Building/Kontinen Anuasrta/Personen/Draculfam/Graf Dracul Țepeș der V.md",
     "Wolrd Building/Kontinen Anuasrta/Personen/Draculfam/Erika Dracul.md",
     "Wolrd Building/Kontinen Anuasrta/Personen/Draculfam/Elfriede Dracul.md",
