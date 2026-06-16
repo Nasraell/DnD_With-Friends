@@ -6,4 +6,4 @@ Mit einer Größe von 178 cm gehört er eher zu den größeren Menschen.
 
 Seine schwarzen Anzüge haben purpurne Akzente. Die goldenen Manschettenknöpfe, besetzt mit Rubinen, glänzen im Kerzenlicht.  
 Seine Hände sind von Narben übersät.  
-Sein Cape wird von einer Brosche gehalten, von einen Silbernen Vampir Gebiss zusammengehalten 
+Sein Cape wird von einer Brosche gehalten, von einen Silbernen Vampir Gebiss zusammengehalten

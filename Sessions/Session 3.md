@@ -1,4 +1,4 @@
-- die gruppe hat ein Haus gefunden  außerhalb der Stadt Stahlfort 
--  nach dem der [[Graf Dracul Țepeș der V]] Ihnen die Möglichkeit geben hat Ihre Potentielle Schuld Ab zu arbeiteten 
-- alle bis auf Leo's PC haben dem zugestimmt 
+- die gruppe hat ein Haus gefunden außerhalb der Stadt Stahlfort
+- nach dem der [[Graf Dracul Țepeș der V]] Ihnen die Möglichkeit geben hat Ihre Potentielle Schuld Ab zu arbeiteten
+- alle bis auf Leo's PC haben dem zugestimmt
 -

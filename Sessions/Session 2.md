@@ -1,3 +1,3 @@
-Nobody exspects the Spanisch Inqisiton 
+Nobody exspects the Spanisch Inqisiton
 
-Die Inquisition 
+Die Inquisition
