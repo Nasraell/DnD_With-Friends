@@ -1,0 +1,4 @@
+**Stahlfort**  
+Am Fuße eines uralten Berges liegt **Stahlfort** – eine Stadt, die vom Eisen und der Kohle lebt, die tief unter ihr verborgen liegen. Der Berg, der die Stadt für den Eisenabbau nutzt, ist einer der größten Kohlelieferanten und Eisenminen im **Königreich der Vereinten Menschlichen Regionen**. Doch wer hier lebt, weiß: Der Berg gibt nicht nur Reichtum. Etwas Altes wacht über Stahlfort und schützt die Stadt unter seinen Fittichen.
+
+**Stahlfort** ist ein Ort, der unter der Herrschaft des Grafen **Vlad der V.** steht. Anders als viele andere Orte im Königreich ist Stahlfort einer der wenigen Plätze, an dem Vampire willkommen sind. Die mächtigen, marmorweißen Wälle der Stadt sind mit Runen bedeckt, die sie vor der Sonne schützen. So herrscht in **Stahlfort** eine ewige Dunkelheit, die niemals weicht.

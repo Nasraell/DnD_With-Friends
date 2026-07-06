@@ -1,0 +1,1 @@
+Die Sesseion begeginnt und endet mit den Kampf Geegn Ifrit ect
