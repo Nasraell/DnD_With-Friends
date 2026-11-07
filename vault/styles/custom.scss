@@ -1,0 +1,40 @@
+h1, h2 {
+  font-variant: small-caps;
+  letter-spacing: 0.02em;
+}
+
+h2 {
+  border-bottom: 1px solid var(--lightgray);
+  padding-bottom: 0.2rem;
+}
+
+// Initiale im ersten Absatz der Sitzungsprotokolle.
+article > p:first-of-type::first-letter {
+  float: left;
+  font-family: var(--headerFont);
+  font-size: 3.2rem;
+  line-height: 0.8;
+  padding: 0.1rem 0.5rem 0 0;
+  color: var(--secondary);
+}
+
+// Eigenschaften-Block (spezies, ort, status ...) als abgesetzte Karte.
+.note-properties, .popover .note-properties {
+  background: var(--highlight);
+  border-left: 3px solid var(--secondary);
+  border-radius: 2px;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.9rem;
+}
+
+// Zitate als Vorlesetext absetzen.
+blockquote {
+  font-style: italic;
+  border-left: 3px solid var(--tertiary);
+}
+
+// Tote Links deutlich markieren, damit Lücken im Vault auffallen.
+a.internal.broken {
+  color: var(--gray);
+  text-decoration: line-through dotted;
+}

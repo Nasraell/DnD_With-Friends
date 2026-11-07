@@ -1,0 +1,93 @@
+name: Deploy Quartz site to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Vault
+        uses: actions/checkout@v6
+        with:
+          path: vault
+          fetch-depth: 0 
+
+      - name: Checkout Quartz v5
+        uses: actions/checkout@v6
+        with:
+          repository: jackyzha0/quartz
+          ref: v5
+          path: quartz
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 26
+
+      - name: Cache dependencies
+        uses: actions/cache@v5
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('quartz/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node-
+
+      - name: Cache Quartz plugins
+        uses: actions/cache@v5
+        with:
+          path: quartz/.quartz/plugins
+          key: ${{ runner.os }}-plugins-${{ hashFiles('quartz/quartz.lock.json', 'vault/quartz.config.yaml') }}
+          restore-keys: ${{ runner.os }}-plugins-
+
+      - name: Setup Quartz 
+        run: |
+          set -euo pipefail
+          rm -rf quartz/content
+          mkdir -p quartz/content
+          cp -r Charakters/ quartz/content/
+          cp -r Map/ quartz/content/
+          cp -r Misc/ quartz/content/
+          cp -r Pictures/ quartz/content/
+          cp -r Places/ quartz/content/
+          cp -r Sessions/ quartz/content/
+          cp README.md quartz/content/index.md
+          cp vault/quartz.config.yaml quartz/quartz.config.yaml
+          cp vault/styles/custom.scss quartz/quartz/styles/custom.scss
+
+      - name: Install Dependencies
+        working-directory: quartz
+        run: npm ci
+
+      - name: Install Quartz plugins
+        working-directory: quartz
+        run: npx quartz plugin install --from-config
+
+      - name: Build Quartz
+        working-directory: quartz
+        run: npx quartz build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: quartz/public
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

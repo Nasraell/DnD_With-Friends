@@ -1,0 +1,209 @@
+configuration:
+  pageTitle: DnD With Friends
+  pageTitleSuffix: ""
+  enableSPA: true
+  enablePopovers: true
+  analytics: null
+  locale: de-DE
+  baseUrl: nasraell.github.io/DnD_With-Friends
+  ignorePatterns:
+    - .obsidian
+    - .github
+    - README.md
+  theme:
+    fontOrigin: googleFonts
+    cdnCaching: true
+    typography:
+      title: Cinzel
+      header: Cinzel
+      body: EB Garamond
+      code: IBM Plex Mono
+    colors:
+      # Helles Pergament
+      lightMode:
+        light: "#f4ecd8"
+        lightgray: "#ddd0b4"
+        gray: "#a89a7c"
+        darkgray: "#3b3228"
+        dark: "#241d16"
+        secondary: "#7b1e22"
+        tertiary: "#8a6d3b"
+        highlight: rgba(123, 30, 34, 0.10)
+        textHighlight: "#c8a03688"
+      # Dunkle Gruft
+      darkMode:
+        light: "#14100d"
+        lightgray: "#2e2721"
+        gray: "#6b5d4b"
+        darkgray: "#e8dcc4"
+        dark: "#f4ecd8"
+        secondary: "#c1121f"
+        tertiary: "#c8a036"
+        highlight: rgba(193, 18, 31, 0.12)
+        textHighlight: "#c8a03688"
+plugins:
+  - source: "@quartz-community/created-modified-date"
+    enabled: true
+    options:
+      defaultDateType: modified
+      priority: [frontmatter, git, filesystem]
+    order: 10
+  - source: "@quartz-community/syntax-highlighting"
+    enabled: true
+    order: 20
+  - source: "@quartz-community/obsidian-flavored-markdown"
+    enabled: true
+    options:
+      enableInHtmlEmbed: false
+      enableCheckbox: true
+    order: 30
+  - source: "@quartz-community/github-flavored-markdown"
+    enabled: true
+    order: 40
+  - source: "@quartz-community/table-of-contents"
+    enabled: true
+    order: 50
+    layout:
+      position: right
+      priority: 30
+  - source: "@quartz-community/crawl-links"
+    enabled: true
+    options:
+      markdownLinkResolution: shortest
+    order: 60
+  - source: "@quartz-community/description"
+    enabled: true
+    order: 70
+  - source: "@quartz-community/quartz-fonts"
+    enabled: true
+  # Es wird alles veröffentlicht. Einzelne Notiz ausblenden: "draft: true" ins Frontmatter.
+  - source: "@quartz-community/remove-draft"
+    enabled: true
+  - source: "@quartz-community/explicit-publish"
+    enabled: false
+  - source: "@quartz-community/alias-redirects"
+    enabled: true
+  - source: "@quartz-community/content-index"
+    enabled: true
+    options:
+      enableSiteMap: true
+      enableRSS: true
+  - source: "@quartz-community/favicon"
+    enabled: true
+  - source: "@quartz-community/og-image"
+    enabled: true
+  - source: "@quartz-community/content-page"
+    enabled: true
+  - source: "@quartz-community/folder-page"
+    enabled: true
+  - source: "@quartz-community/tag-page"
+    enabled: true
+  - source: "@quartz-community/explorer"
+    enabled: true
+    layout:
+      position: left
+      priority: 50
+  - source: "@quartz-community/graph"
+    enabled: true
+    layout:
+      position: right
+      priority: 10
+  - source: "@quartz-community/search"
+    enabled: true
+    layout:
+      position: left
+      priority: 20
+      group: toolbar
+      groupOptions:
+        grow: true
+  - source: "@quartz-community/backlinks"
+    enabled: true
+    layout:
+      position: right
+      priority: 50
+  - source: "@quartz-community/article-title"
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 10
+  - source: "@quartz-community/content-meta"
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 20
+  - source: "@quartz-community/page-title"
+    enabled: true
+    layout:
+      position: left
+      priority: 10
+  - source: "@quartz-community/darkmode"
+    enabled: true
+    layout:
+      position: left
+      priority: 30
+      group: toolbar
+  - source: "@quartz-community/reader-mode"
+    enabled: true
+    layout:
+      position: left
+      priority: 35
+      group: toolbar
+  - source: "@quartz-community/breadcrumbs"
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 5
+      condition: not-index
+  - source: "@quartz-community/note-properties"
+    enabled: true
+    options:
+      includeAll: true
+      includedProperties: []
+      excludedProperties: [title]
+      hidePropertiesView: false
+      delimiters: ---
+      language: yaml
+    order: 5
+    layout:
+      position: beforeBody
+      priority: 15
+      display: all
+  - source: "@quartz-community/spacer"
+    enabled: true
+    options: {}
+    order: 25
+    layout:
+      position: left
+      priority: 25
+      display: mobile-only
+  - source: "@quartz-community/footer"
+    enabled: true
+    options:
+      links:
+        Repository: https://github.com/Nasraell/DnD_With-Friends
+    layout:
+      position: footer
+      priority: 50
+layout:
+  groups:
+    toolbar:
+      priority: 35
+      direction: row
+      gap: 0.5rem
+  byPageType:
+    "404":
+      positions:
+        beforeBody: []
+        left: []
+        right: []
+    content: {}
+    folder:
+      exclude: [reader-mode]
+      positions:
+        right: []
+    tag:
+      exclude: [reader-mode]
+      positions:
+        right: []
+    canvas: {}
+    bases: {}
