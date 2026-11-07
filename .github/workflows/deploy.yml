@@ -54,12 +54,12 @@ jobs:
           set -euo pipefail
           rm -rf quartz/content
           mkdir -p quartz/content
-          cp -r Charakters/ quartz/content/
-          cp -r Map/ quartz/content/
-          cp -r Misc/ quartz/content/
-          cp -r Pictures/ quartz/content/
-          cp -r Places/ quartz/content/
-          cp -r Sessions/ quartz/content/
+          cp -r vault/Charakters/ quartz/content/
+          cp -r vault/Map/ quartz/content/
+          cp -r vault/Misc/ quartz/content/
+          cp -r vault/Pictures/ quartz/content/
+          cp -r vault/Places/ quartz/content/
+          cp -r vault/Sessions/ quartz/content/
           cp README.md quartz/content/index.md
           cp vault/quartz.config.yaml quartz/quartz.config.yaml
           cp vault/styles/custom.scss quartz/quartz/styles/custom.scss
