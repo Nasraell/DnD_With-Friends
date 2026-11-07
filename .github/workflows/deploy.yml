@@ -60,7 +60,7 @@ jobs:
           cp -r vault/Pictures/ quartz/content/
           cp -r vault/Places/ quartz/content/
           cp -r vault/Sessions/ quartz/content/
-          cp README.md quartz/content/index.md
+          cp vault/README.md quartz/content/index.md
           cp vault/quartz.config.yaml quartz/quartz.config.yaml
           cp vault/styles/custom.scss quartz/quartz/styles/custom.scss
 
